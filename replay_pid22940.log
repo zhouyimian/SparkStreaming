@@ -1,0 +1,78 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 1011 ciObject found
+ciMethod java/lang/Object <init> ()V 4097 1 243281 0 0
+ciMethod java/lang/Object equals (Ljava/lang/Object;)Z 2505 1 104589 0 64
+ciMethod java/lang/String length ()I 4097 1 130449 0 -1
+ciMethod java/lang/String charAt (I)C 4097 1 161398 0 -1
+ciMethod java/lang/String equals (Ljava/lang/Object;)Z 2041 9577 2882 0 -1
+ciMethod java/lang/System arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V 8193 1 1024 0 -1
+ciMethod java/lang/Error <init> (Ljava/lang/String;)V 17 1 2 0 -1
+ciMethod java/lang/Thread currentThread ()Ljava/lang/Thread; 2049 1 256 0 -1
+ciMethod java/lang/StringBuilder <init> ()V 665 1 4415 0 -1
+ciMethod java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder; 1065 1 17419 0 -1
+ciMethod java/lang/StringBuilder append (I)Ljava/lang/StringBuilder; 0 0 1 0 -1
+ciMethod java/lang/StringBuilder toString ()Ljava/lang/String; 665 1 6903 0 -1
+ciMethod java/nio/Buffer <init> (IIII)V 425 1 5286 0 384
+ciMethod java/nio/Buffer position ()I 1033 1 129 0 0
+ciMethod java/nio/Buffer position (I)Ljava/nio/Buffer; 873 1 5275 0 128
+ciMethod java/nio/Buffer limit (I)Ljava/nio/Buffer; 2633 1 5300 0 -1
+ciMethod java/nio/Buffer flip ()Ljava/nio/Buffer; 3145 1 4707 0 0
+ciMethod java/nio/Buffer remaining ()I 2057 1 13910 0 0
+ciMethod java/nio/Buffer hasRemaining ()Z 3081 1 9324 0 0
+ciMethod java/nio/Buffer checkBounds (III)V 4097 1 4648 0 0
+ciMethod java/lang/Number <init> ()V 2913 1 3940 0 0
+ciMethod java/lang/Integer valueOf (I)Ljava/lang/Integer; 2177 1 5681 0 192
+ciMethod java/lang/Integer <init> (I)V 2161 1 2858 0 0
+ciMethod java/lang/Integer intValue ()I 1025 1 128 0 -1
+ciMethod java/nio/charset/Charset name ()Ljava/lang/String; 1041 1 130 0 -1
+ciMethod java/nio/charset/Charset decode (Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer; 3073 1 4622 0 0
+ciMethod java/nio/charset/Charset equals (Ljava/lang/Object;)Z 3081 1 4648 0 -1
+ciMethod java/lang/ThreadLocal get ()Ljava/lang/Object; 2049 1 4935 0 0
+ciMethod java/lang/ThreadLocal setInitialValue ()Ljava/lang/Object; 41 1 6 0 -1
+ciMethod java/lang/ThreadLocal set (Ljava/lang/Object;)V 65 1 8 0 -1
+ciMethod java/lang/ThreadLocal getMap (Ljava/lang/Thread;)Ljava/lang/ThreadLocal$ThreadLocalMap; 2049 1 1330 0 -1
+ciMethodData java/lang/String charAt (I)C 2 161398 orig 264 88 66 89 104 0 0 0 0 104 61 99 25 0 0 0 0 120 1 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 177 163 19 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 80 0 0 0 255 255 255 255 7 0 1 0 0 0 0 0 data 10 0x10007 0x0 0x40 0x27476 0xa0007 0x27476 0x30 0x0 0x120002 0x0 oops 0
+ciMethodData java/lang/String length ()I 2 132149 orig 264 88 66 89 104 0 0 0 0 24 60 99 25 0 0 0 0 32 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 169 17 16 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/lang/Object <init> ()V 2 243281 orig 264 88 66 89 104 0 0 0 0 128 4 99 25 0 0 0 0 32 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 137 162 29 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethod java/lang/ThreadLocal$ThreadLocalMap access$000 (Ljava/lang/ThreadLocal$ThreadLocalMap;Ljava/lang/ThreadLocal;)Ljava/lang/ThreadLocal$ThreadLocalMap$Entry; 2033 1 4935 0 -1
+ciMethod java/nio/charset/CharsetDecoder charset ()Ljava/nio/charset/Charset; 1249 1 156 0 -1
+ciMethod java/nio/charset/CharsetDecoder onMalformedInput (Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder; 369 1 4833 0 0
+ciMethod java/nio/charset/CharsetDecoder implOnMalformedInput (Ljava/nio/charset/CodingErrorAction;)V 369 1 4833 0 0
+ciMethod java/nio/charset/CharsetDecoder onUnmappableCharacter (Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder; 369 1 4833 0 0
+ciMethod java/nio/charset/CharsetDecoder implOnUnmappableCharacter (Ljava/nio/charset/CodingErrorAction;)V 369 1 4835 0 0
+ciMethod java/nio/charset/CharsetDecoder averageCharsPerByte ()F 3097 1 4640 0 0
+ciMethod java/nio/charset/CharsetDecoder decode (Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;Z)Ljava/nio/charset/CoderResult; 305 1 4685 0 0
+ciMethod java/nio/charset/CharsetDecoder flush (Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult; 177 1 4666 0 0
+ciMethod java/nio/charset/CharsetDecoder implFlush (Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult; 4097 1 1541 0 0
+ciMethod java/nio/charset/CharsetDecoder reset ()Ljava/nio/charset/CharsetDecoder; 3081 1 16200 0 0
+ciMethod java/nio/charset/CharsetDecoder implReset ()V 3081 1 1418 0 0
+ciMethod java/nio/charset/CharsetDecoder decodeLoop (Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult; 0 0 1 0 -1
+ciMethod java/nio/charset/CharsetDecoder decode (Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer; 3073 1 4634 0 0
+ciMethod java/nio/charset/CharsetDecoder throwIllegalStateException (II)V 0 0 1 0 0
+ciMethod java/nio/ByteBuffer <init> (IIII[BI)V 209 1 4674 0 0
+ciMethod java/nio/ByteBuffer wrap ([BII)Ljava/nio/ByteBuffer; 33 1 4628 0 0
+ciMethod java/nio/ByteBuffer hasArray ()Z 3353 1 4691 0 -1
+ciMethod java/nio/HeapByteBuffer <init> ([BII)V 33 1 4628 0 0
+ciMethod java/nio/Bits byteOrder ()Ljava/nio/ByteOrder; 2393 1 4700 0 0
+ciMethod java/nio/CharBuffer <init> (IIII[CI)V 169 1 4684 0 -1
+ciMethod java/nio/CharBuffer allocate (I)Ljava/nio/CharBuffer; 3321 1 4669 0 0
+ciMethod java/nio/CharBuffer get ([CII)Ljava/nio/CharBuffer; 0 0 1 0 -1
+ciMethod java/nio/CharBuffer get ([C)Ljava/nio/CharBuffer; 3169 1 4624 0 0
+ciMethod java/nio/CharBuffer put (Ljava/nio/CharBuffer;)Ljava/nio/CharBuffer; 0 0 1 0 -1
+ciMethod java/nio/CharBuffer put (Ljava/lang/String;)Ljava/nio/CharBuffer; 0 0 1 0 -1
+ciMethod java/nio/CharBuffer hasArray ()Z 3353 1 4691 0 -1
+ciMethod java/nio/HeapCharBuffer <init> (II)V 3321 1 4677 0 0
+ciMethod java/nio/HeapCharBuffer ix (I)I 4097 1 4646 0 0
+ciMethod java/nio/HeapCharBuffer get ([CII)Ljava/nio/CharBuffer; 4097 1 4646 0 0
+ciMethod java/nio/charset/CoderResult isUnderflow ()Z 353 1 18644 0 0
+ciMethod java/nio/charset/CoderResult isOverflow ()Z 2377 1 4683 0 0
+ciMethod java/nio/charset/CoderResult isMalformed ()Z 0 0 1 0 -1
+ciMethod java/nio/charset/CoderResult isUnmappable ()Z 0 0 1 0 -1
+ciMethod java/nio/charset/CoderResult length ()I 0 0 1 0 -1
+ciMethod java/nio/charset/CoderResult malformedForLength (I)Ljava/nio/charset/CoderResult; 0 0 1 0 -1
+ciMethod java/nio/charset/CoderResult throwException ()V 0 0 1 0 -1
+ciMethod java/lang/IllegalArgumentException <init> ()V 0 0 1 0 -1
+ciMethod java/lang/IllegalArgumentException <init> (Ljava/lang/String;)V 0 0 1 0 -1
+ciMethodData java/lang/String equals (Ljava/lang/Object;)Z 2 18054 orig 264 88 66 89 104 0 0 0 0 208 69 99 25 0 0 0 0 104 2 0 0 160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 

@@ -5,9 +5,6 @@ import org.apache.commons.pool2.impl.DefaultPooledObject
 import org.apache.commons.pool2.{BasePooledObjectFactory, PooledObject}
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 
-/**
-  * Created by wuyufei on 06/09/2017.
-  */
 
 case class KafkaProducerProxy(brokerList: String,
                             producerConfig: Properties = new Properties,
@@ -21,10 +18,10 @@ case class KafkaProducerProxy(brokerList: String,
 
   private val p = producer getOrElse {
 
-    var props:Properties= new Properties();
-    props.put("bootstrap.servers", brokerList);
-    props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
-    props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+    var props:Properties= new Properties()
+    props.put("bootstrap.servers", brokerList)
+    props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
+    props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
 
     new KafkaProducer[String,String](props)
   }
@@ -70,7 +67,7 @@ class BaseKafkaProducerFactory(brokerList: String,
                                   defaultTopic: Option[String] = None)
   extends KafkaProducerFactory(brokerList, config, defaultTopic) {
 
-  override def newInstance() = new KafkaProducerProxy(brokerList, config, defaultTopic)
+  override def newInstance() = KafkaProducerProxy(brokerList, config, defaultTopic)
 
 }
 

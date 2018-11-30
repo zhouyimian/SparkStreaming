@@ -9,9 +9,6 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
-/**
-  * Created by wuyufei on 06/09/2017.
-  */
 
 
 object createKafkaProducerPool{
@@ -41,8 +38,8 @@ object KafkaStreaming{
 
     //创建topic
     val brobrokers = "192.168.145.128:9092,192.168.145.129:9092"
-    val sourcetopic="source";
-    val targettopic="target1";
+    val sourcetopic="source"
+    val targettopic="target1"
 
     //创建消费者组
     var group="con-consumer-group"
@@ -58,7 +55,7 @@ object KafkaStreaming{
       "auto.offset.reset" -> "latest",
       //如果是true，则这个消费者的偏移量会在后台自动提交
       "enable.auto.commit" -> (false: java.lang.Boolean)
-    );
+    )
 
 
 

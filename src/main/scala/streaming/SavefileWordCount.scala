@@ -27,7 +27,8 @@ object SavefileWordCount {
     // 使用updateStateByKey来更新状态，统计从运行开始以来单词总的次数
     val stateDstream = pairs.updateStateByKey[Int](updateFunc)
 
-    stateDstream.saveAsTextFiles("statful")
+    stateDstream.print()
+    stateDstream.saveAsTextFiles("hdfs://mini1:9000/statful/","abc")
 
 
     ssc.start()

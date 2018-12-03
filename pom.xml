@@ -83,7 +83,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>streaming.updateStreaming</mainClass>
+                            <mainClass>streaming.SavefileWordCount</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

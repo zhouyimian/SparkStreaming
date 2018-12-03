@@ -83,7 +83,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>streaming.KafkaStreaming</mainClass>
+                            <mainClass>streaming.WindowsWorldCount</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

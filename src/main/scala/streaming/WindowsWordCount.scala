@@ -3,7 +3,7 @@ package streaming
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
-object WindowsWorldCount {
+object WindowsWordCount {
   def main(args: Array[String]): Unit = {
 
     val updateFunc = (values: Seq[Int],state: Option[Int]) =>{

@@ -83,7 +83,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>streaming.WindowsWorldCount</mainClass>
+                            <mainClass>streaming.SavefileWordCount</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
